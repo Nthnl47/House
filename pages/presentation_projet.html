@@ -34,32 +34,21 @@
 			<br>
 			Ainsi la maison pourra réaliser ces tâches en fonction de facteurs comme l'heure ou les conditions météorologiques.<br>
 			Ce projet sera présenté sous la forme d'une application correspondant à une simulation des changements effectués par la maison.<br>
-			Pour ce faire, nous allons utiliser un Rasperry PI (cf. Ressources)  et un système électronique qui va représenter les différents appareils de notre maison connectée.
+			Pour ce faire, nous allons utiliser un Raspberry PI (cf. Ressources)  et un système électronique qui va représenter les différents appareils de notre maison connectée.
 			</p>
 		</div>
 
 		<div id="block_routines">
 			<h2> Routines mises en place</h2>
 			<p id="textroutines">
-			Nous allons maintenant vous montrer les différentes routines qui ont été mises en place. Ainsi en fonction de différents paramètres auxquelles nous avons pensé nous verrons comment les appareils réagiront.
+			Nous allons maintenant vous montrer les différentes routines qui ont été mises en place. Ainsi en fonction de différents paramètres auxquels nous avons pensé, nous verrons comment les appareils réagiront.
 			<ul id="routines">
-			<li>Absence prolongée</li>
-				<table>
-					<tr>
-						<td> Climatisation éteinte </td>
-						<td> Chauffage allumé (si T < 3°) </td>
-						<td> Extinction des lumières </td>
-						<td> Fermeture des volets</td>
-						<td> Activations de l'alarme</td>
-					</tr>
-
-				</table>
 			<li>Climatisation</li>
 				<table>
 					<tr>
 						<td> Extinction si absence prolongée </td>
-						<td> Allumage (à 22°C) si présence + T > 30° </td>
-						<td> Extinction pendant les heures d'absences </td>
+						<td> Allumage (à 22°C) si présence + T > 30°C </td>
+						<td> Extinction pendant les heures d'absence </td>
 					</tr>
 
 				</table>
@@ -67,17 +56,18 @@
 				<table>
 					<tr>
 						<td> Extinction si absence prolongée </td>
-						<td> Extinction pendant les heures d'absences </td>
-						<td> Allumage (à 22°C) si présence + T < 30° </td>
+						<td> Extinction pendant les heures d'absence </td>
+						<td> Allumage si présence + T < 12°C </td>
 					</tr>
 
 				</table>
 			<li>Fermeture des volets</li>
 				<table>
 					<tr>
-						<td> Heure (si il fait nuit) </td>
+						<td> Heure (s'il fait nuit) </td>
 						<td> Extinction pendant les heures d'absences </td>
-						<td> Allumage (à 22°C) si présence + T < 30° </td>
+						<td> Condition météorologique: pluie / vent  </td>
+						<td> Faible luminosité  </td>
 					</tr>
 
 				</table>
@@ -86,7 +76,7 @@
 					<tr>
 						<td> Allumage moment précis: le matin </td>
 						<td> Condition climatique (si pas de pluie) </td>
-						<td> Température > 15°C </td>
+						<td> Température >= 15°C </td>
 					</tr>
 
 				</table>
@@ -103,7 +93,7 @@
 			<table>
 					<tr>
 						<td> Moment précis: jour + forte luminosité</td>
-						<td> En cas d'absence</td>
+						<td> En cas d'absence prolongée</td>
 					</tr>
 
 				</table>
