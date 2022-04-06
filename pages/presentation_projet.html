@@ -26,9 +26,10 @@
     
 </nav>
 
-
+		
 		<div id="block_objectif">
-			<head> Objectif du projet</head>
+			<h1>Objectif du projet</h1>
+
 			<p id="text"> L'objectif de notre projet est d'implémenter un algorithme permettant de réaliser différentes tâches du quotidien dans une maison.
 			<br>
 			Ainsi la maison pourra réaliser ces tâches en fonction de facteurs comme l'heure ou les conditions météorologiques.<br>
@@ -38,41 +39,93 @@
 		</div>
 
 		<div id="block_routines">
-			<head> Routines mises en place</head>
-			<p id="text">
+			<h2> Routines mises en place</h2>
+			<p id="textroutines">
+			Nous allons maintenant vous montrer les différentes routines qui ont été mises en place. Ainsi en fonction de différents paramètres auxquelles nous avons pensé nous verrons comment les appareils réagiront.
+			<ul id="routines">
+			<li>Absence prolongée</li>
+				<table>
+					<tr>
+						<td> Climatisation éteinte </td>
+						<td> Chauffage allumé (si T < 3°) </td>
+						<td> Extinction des lumières </td>
+						<td> Fermeture des volets</td>
+						<td> Activations de l'alarme</td>
+					</tr>
+
+				</table>
+			<li>Climatisation</li>
+				<table>
+					<tr>
+						<td> Extinction si absence prolongée </td>
+						<td> Allumage (à 22°C) si présence + T > 30° </td>
+						<td> Extinction pendant les heures d'absences </td>
+					</tr>
+
+				</table>
+			<li>Chauffage</li>
+				<table>
+					<tr>
+						<td> Extinction si absence prolongée </td>
+						<td> Extinction pendant les heures d'absences </td>
+						<td> Allumage (à 22°C) si présence + T < 30° </td>
+					</tr>
+
+				</table>
+			<li>Fermeture des volets</li>
+				<table>
+					<tr>
+						<td> Heure (si il fait nuit) </td>
+						<td> Extinction pendant les heures d'absences </td>
+						<td> Allumage (à 22°C) si présence + T < 30° </td>
+					</tr>
+
+				</table>
+			<li>Arrosage du jardin</li>
+			<table>
+					<tr>
+						<td> Allumage moment précis: le matin </td>
+						<td> Condition climatique (si pas de pluie) </td>
+						<td> Température > 15°C </td>
+					</tr>
+
+				</table>
+			<li>Activation de l'alarme</li>
+			<table>
+					<tr>
+						<td> En cas d'absence prolongée</td>
+						<td> Moment précis: la nuit </td>
+						<td> Sonne en cas de la détection d'une présence pendant l'activation </td>
+					</tr>
+
+				</table>
+			<li>Extinction des lumières</li>
+			<table>
+					<tr>
+						<td> Moment précis: jour + forte luminosité</td>
+						<td> En cas d'absence</td>
+					</tr>
+
+				</table>
+			
+		</ul>
+		</p>
+
 
 			</p>
 		</div>
 
-		<div id="block_membres">
-			<head> Présentation des membres du groupe</head>
+		<!--<div id="block_membres">
+			<h3> Présentation des membres du groupe</h3>
 			<p id="text">
-			<!-- noms + photos pour la présentation--> 
 				<p class="noms">
-				<ul id="noms"><!--
-			--><li>BEN-AYED Amine</li><!--
-				<div><img src="logo.png"
-				width = "100"
-				height ="85"></div>
-
-			--><li>BENISTI-AMINOV Liora</li><!--
-				<div><img src="logo.png"
-				width = "100"
-				height ="85"></div>
-			--><li>BOUKAOUI Mohamed</li><!--
-				<div><img src="logo.png"
-				width = "100"
-				height ="85"></div>
-			--><li>DEZ Théo</li><!--
-				<div><img src="logo.png"
-				width = "100"
-				height ="85"></div>
-			--><li>NDE Nathanael</li><!--
-				<div><img src="logo.png"
-				width = "100"
-				height ="85"></div>
-			-->
+					<ul id="noms">
+						<li>BEN-AYED Amine</li>
+						<li>BENISTI-AMINOV Liora</li>
+						<li>BOUKAOUI Mohamed</li>
+						<li>DEZ Théo</li>
+			  		<li>NDE Nathanael</li>
 				</ul></p>
 			</p>
-		</div>
+		</div> -->
 </html>

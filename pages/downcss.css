@@ -19,7 +19,7 @@ h1
 /*logo*/
 div
 {
-	text-align: left;
+	text-align: center;
 }
 #noms
 {
@@ -184,7 +184,7 @@ li a {
 {
     padding: 2% 0;
     width: 100%;
-    background: darkred;
+    background: darkslateblue;
     list-style: none;
     float: center;
 }
