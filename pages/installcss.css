@@ -15,10 +15,11 @@ body
 /*logo*/
 div
 {
-    text-align: center;
+    text-align: left;
 }
 
 /*barre de menu*/
+/*
 :root{
   --hauteur-menu: 60px;
 }
@@ -136,4 +137,72 @@ li a {
 
 .sous-menu > li:hover > a {
   color: white;
+} */
+
+/*barre de menu*/
+.menu 
+{
+    display: flex;                  /* Transformation en flexbox */
+    padding:0;                      /* Suppression des marges internes */
+    background-color:white ;    /* couleur d'arrière-plan */
+    justify-content: center;        /*alignement des liens*/
+}
+.menu li 
+{
+
+    list-style-type: none ;    /* Suppression des pts des listes */
+}
+.menu a 
+{
+    display:block;                /* Transformation en block */
+    min-width: 400px;             /* Largeur minimale des liens */
+}
+.menu a 
+{
+    display:block;                /* Transformation en block */
+    min-width: 150px;             /* Largeur minimale des liens */   
+    
+    margin: 1.0rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.9rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: royalblue;    /* Couleur d'arrière-plan */
+    color: whitesmoke;            /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+}
+.menu a:hover /* effet de survol sur les liens*/
+{
+  background-color: darkslateblue;
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+#text
+{
+    height: 200px;
+    width: 900px;
+    border: 4px solid royalblue;
+    text-align: center;
+    align-content: center;
+    border-radius: 4px;           /* Arrondis des bordures */
+    margin: 1.0rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.5rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    background-color: whitesmoke;
+
+}
+#noms
+{
+    list-style-type: none ; 
+    text-indent: 50px;
+    height: 100px;
+    width: 250px;
+    border: 4px solid royalblue;
+    text-align: left;
+    align-content: center;
+    border-radius: 4px;           /* Arrondis des bordures */
+    margin: 1.0rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.9rem 0;         /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    padding-left: 0;
+    background-color: whitesmoke;
 }
