@@ -1,6 +1,6 @@
 body
 {
-    background-color:  white;
+    background-color:  whitesmoke;
     opacity: 0.8;
 }
 #block
@@ -16,6 +16,55 @@ body
 div
 {
     text-align: left;
+}
+.block
+{
+  text-align: center;
+
+}
+#install 
+{
+    width: 60%;
+    padding: 0 0; 
+    margin: 0 0;    
+    overflow: hidden;
+    background-color: royalblue;
+
+}
+#install ul 
+{
+    list-style-type: none;
+
+}
+
+#install li 
+{
+    list-style: none;   
+    float: center;
+
+}
+#install  a 
+{
+    padding: 2% 0;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 5px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+
+}
+
+#install li a:hover 
+{
+    padding: 2% 0;
+    width: 100%;
+    background: darkslateblue;
+    list-style: none;
+    float: center;
+
 }
 
 /*barre de menu*/
@@ -144,7 +193,7 @@ li a {
 {
     display: flex;                  /* Transformation en flexbox */
     padding:0;                      /* Suppression des marges internes */
-    background-color:white ;    /* couleur d'arrière-plan */
+    background-color:whitesmoke ;    /* couleur d'arrière-plan */
     justify-content: center;        /*alignement des liens*/
 }
 .menu li 

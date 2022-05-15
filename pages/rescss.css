@@ -1,6 +1,6 @@
 body
 {
-    background-color:  white;
+    background-color:  whitesmoke;
     opacity: 0.8;
 }
 #block
@@ -69,7 +69,7 @@ h3
     height: 225px;
     width: 900px;
     border: 4px solid royalblue;
-    text-align: left;
+    text-align: justify;
     align-content: left;
     border-radius: 4px;           /* Arrondis des bordures */
     margin: 1.0rem;               /* Marges externes (1 valeurs = 4 directions) */
@@ -231,7 +231,7 @@ li a {
 {
     display: flex;                  /* Transformation en flexbox */
     padding:0;                      /* Suppression des marges internes */
-    background-color:white ;    /* couleur d'arrière-plan */
+    background-color:whitesmoke ;    /* couleur d'arrière-plan */
     justify-content: center;        /*alignement des liens*/
 }
 .menu li 

@@ -8,7 +8,6 @@
 	<body>
 		<!-- <head>HOUSE CONNECTED</head> --> 
 		
-
 	<nav>
   	<ul>
     <!--<li class="menu-deroulant">
@@ -27,16 +26,17 @@
     
 </nav>
 
-		
 		<div id="block_objectif">
 			<h1>Objectif du projet</h1>
 
-			<p id="text"> L'objectif de notre projet est d'implémenter un algorithme permettant de réaliser différentes tâches du quotidien dans une maison.
+			<p id="text"> 
+			<SPACE>L'objectif de notre projet est d'implémenter un algorithme permettant de réaliser différentes tâches du quotidien
+			dans une maison.<br>
+			Ainsi la maison pourra réaliser ces tâches en fonction de facteurs comme la présence ou les conditions météorologiques.<br>
+			Ce projet est présenté sous la forme d'une application correspondant à une simulation des changements effectués par la maison.
 			<br>
-			Ainsi la maison pourra réaliser ces tâches en fonction de facteurs comme l'heure ou les conditions météorologiques.<br>
-			Ce projet sera présenté sous la forme d'une application correspondant à une simulation des changements effectués par la maison.<br>
-			Pour ce faire, nous allons utiliser un Raspberry PI (cf. Ressources)  et un système électronique qui va représenter les différents appareils de notre maison connectée.
-			</p>
+			<SPACE>Pour ce faire, nous allons utiliser un Raspberry PI (cf. Ressources)  et un système électronique représentant les
+			différents appareils de notre maison connectée.</p>
 		</div>
 
 		<div id="block_routines">
@@ -47,44 +47,47 @@
 				place. Ainsi en fonction de différents paramètres 
 				auxquels nous avons pensé, nous verrons comment les 
 				appareils réagiront.<br>
-				
+				<br>
+
 			<li>Climatisation</li>
 				<table>
 					<tr>
 						<td> Extinction si absence prolongée </td>
-						<td> Allumage (à 22°C) si présence + T > 30°C </td>
+						<td> Allumage (à 22°C) si présence + T > 25°C </td>
 						<td> Extinction pendant les heures d'absence </td>
 					</tr>
 
 				</table>
+				<br>
 			<li>Chauffage</li>
 				<table>
 					<tr>
 						<td> Extinction si absence prolongée </td>
-						<td> Extinction pendant les heures d'absence </td>
 						<td> Allumage si présence + T < 12°C </td>
+						<td> Extinction pendant les heures d'absence </td>
 					</tr>
 
 				</table>
+				<br>
 			<li>Fermeture des volets</li>
 				<table>
 					<tr>
-						<td> Heure (s'il fait nuit) </td>
-						<td> Extinction pendant les heures d'absences </td>
-						<td> Condition météorologique: pluie / vent  </td>
-						<td> Faible luminosité  </td>
+						<td> Nuit </td>
+						<td> Extinction pendant les heures d'absence </td>
+						<td> Condition météorologique: pluie </td>
 					</tr>
 
 				</table>
+				<br>
 			<li>Arrosage du jardin</li>
 			<table>
 					<tr>
-						<td> Allumage moment précis: le matin </td>
 						<td> Condition climatique (si pas de pluie) </td>
 						<td> Température >= 15°C </td>
 					</tr>
 
 				</table>
+				<br>
 			<li>Activation de l'alarme</li>
 			<table>
 					<tr>
@@ -94,10 +97,11 @@
 					</tr>
 
 				</table>
+				<br>
 			<li>Extinction des lumières</li>
 			<table>
 					<tr>
-						<td> Moment précis: jour + forte luminosité</td>
+						<td> Moment précis: jour </td>
 						<td> En cas d'absence prolongée</td>
 					</tr>
 
@@ -110,17 +114,56 @@
 			</p>
 		</div>
 
-		<!--<div id="block_membres">
+		<div id="block_membres">
 			<h3> Présentation des membres du groupe</h3>
-			<p id="text">
-				<p class="noms">
 					<ul id="noms">
 						<li>BEN-AYED Amine</li>
+						<p id ="amine">
+						<SPACE>Depuis mon enfance, j’ai toujours apprécié l’informatique, plus précisément le métier d’ingénieur en informatique. 
+						Pourquoi ce choix ? Être ingénieur est pour moi une icône du succès.<br> Ces personnes ont de vastes connaissances dans tous
+						les domaines et m’inspirent. Suite à mon S2/S3 où j’ai touché aux jeux vidéos, j’ai décidé de rejoindre ce projet plus 
+						précisément pour toucher à un autre domaine: la domotique.
+						</p>
+
 						<li>BENISTI-AMINOV Liora</li>
+						<p id ="lio">
+							<SPACE>Depuis ma plus tendre enfance, j’aime laisser libre cours à mon imagination. En effet, je suis née dans une
+							 famille où les arts et l’expression qu’ils permettent, ont une place très importante : peinture, musique, expression
+							 littéraire, sculpture et j’en passe. J’avais donc deux grandes passions dans ma vie : la médecine et la création. <br>
+								Après deux ans en médecine et l’échec du concours, j’ai décidé de me réorienter vers un métier qui m’intéresserait et 
+							 qui permettrait l’expression de mon imagination. <br>
+         			Nous en avons discuté avec mes parents, surtout avec mon beau-père qui est ingénieur dans l’aéronautique et j’ai choisi
+         			 de devenir ingénieur. Après quelques recherches sur Internet, j’ai entendu parler de l’EPITA dont les valeurs et les
+         			 opportunités correspondaient avec ma vision d’un métier épanouissant. J’ai donc choisi de devenir ingénieur en 
+								informatique, le métier de tous les possibles ! <br>
+								Étant une personne très motivée et avide d’apprendre, ce projet me tient particulièrement à cœur et correspond à mes 
+								objectifs.
+						</p>
+
 						<li>BOUKAOUI Mohamed</li>
+						<p id ="moha">
+						<SPACE>Passionné de technologie de base et ayant eu l’occasion, par le passé, de travailler dans le contexte de travaux
+						personnels sur un projet du même genre, je trouve en ce projet une opportunité de continuer à explorer le domaine de la
+						domotique moderne mais cette fois en travaillant en équipe.
+						</p>
+
 						<li>DEZ Théo</li>
+						<p id ="théo">
+							<SPACE>En entrant dans une école d'informatique, ce qui me passionnait le plus, c'était de pouvoir avancer en faisant des
+							travaux de groupe pour créer des programmes, jeux ou autres. Avec les projets du S2 et du S3 j’ai pu avoir l’expérience
+							que je souhaitais. <br>Créer quelque chose par nous-mêmes, sans aide, est ce qui me donne envie d’apprendre et d’avancer
+							dans les années à venir. Ceci est amplifié pour ce projet car il est d’une plus grande difficulté et demande donc 
+							d’utiliser toutes nos connaissances acquises depuis notre début à l’EPITA. 
+						</p>
+
 			  		<li>NDE Nathanael</li>
-				</ul></p>
-			</p>
-		</div> -->
+			  		<p id ="nath">
+			  			<SPACE>J’ai toujours eu un œil porté sur l’informatique depuis le lycée. J’ai trouvé les différents projets qu’on a eu à
+			  			 faire en première année et au S3 très intéressants : ils nous ont permis d’apprendre de nombreuses choses et nous ont
+			  			 fait énormément progresser. 
+							Ce projet est dans la continuité de celui du semestre dernier : il nous a permis de renforcer nos connaissances et nos 
+							acquis en C. 
+			  		</p>
+				</ul>
+		</div>
 </html>

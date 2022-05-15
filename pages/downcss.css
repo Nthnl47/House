@@ -1,6 +1,6 @@
 body
 {
-	background-color:  white;
+	background-color:  whitesmoke;
 	opacity: 0.8;
 }
 h1
@@ -195,7 +195,7 @@ li a {
 {
     display: flex;                  /* Transformation en flexbox */
     padding:0;                      /* Suppression des marges internes */
-    background-color:white ;    /* couleur d'arrière-plan */
+    background-color:whitesmoke ;    /* couleur d'arrière-plan */
     justify-content: center;        /*alignement des liens*/
 }
 .menu li 
